@@ -48,21 +48,27 @@ class Login extends React.Component {
       <div>
         {errorMsg && <p>{errorMsg}</p>}
         <form onSubmit={this.handleSubmit}>
-          <input
-            data-field-name={'username'}
-            type={'text'}
-            onChange={this.handleChange}
-            placeholder={'Имя'}
-            value={username}
-          />
-          <input
-            data-field-name={'password'}
-            type={'password'}
-            onChange={this.handleChange}
-            placeholder={'Пароль'}
-            value={password}
-          />
-          <button type="submit">Log in</button>
+          <p>
+            <input
+              data-field-name={'username'}
+              type={'text'}
+              onChange={this.handleChange}
+              placeholder={'Имя'}
+              value={username}
+            />
+          </p>
+          <p>
+            <input
+              data-field-name={'password'}
+              type={'password'}
+              onChange={this.handleChange}
+              placeholder={'Пароль'}
+              value={password}
+            />
+          </p>
+          <p>
+            <button type="submit">Log in</button>
+          </p>
         </form>
       </div>
     )
