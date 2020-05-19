@@ -1,0 +1,40 @@
+.main-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    width: auto;
+    grid-template-areas:
+    'h h h'
+    'c c c';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 12fr;
+    grid-gap: 10px;
+}
+
+.content-header-img {
+    padding-top: 10px;
+    height: 400px;
+}
+
+.header {
+    grid-area: h;
+    background-color: rgba(149, 235, 149, 0.281);
+    padding: 10px;
+}
+
+
+.menu {
+    padding-bottom: 10px;
+}
+
+.profile {
+    background-color: rgba(199, 171, 144, 0.623);
+}
+
+.ava {
+    border: solid 1px black;
+    margin: 10px 45%;
+    /* width: 110px; */
+    text-align: center;
+    padding: 10px;
+}
